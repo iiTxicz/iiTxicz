@@ -1,6 +1,6 @@
 # Yo, I'm iiTxicz, created iHeartBot and many other projects! [iHeartBot](https://iheartbot.iitxicz.com)
 # [Links](https://links.iitxicz.com)
-# [Arizona State University](https://asu.edu) is #1
+# [Arizona State University](https://asu.edu) a W
 
 # Stats
 [![iiTxicz' GitHub stats](https://github-readme-stats.vercel.app/api?username=iitxicz)](https://github.com/anuraghazra/github-readme-stats)
