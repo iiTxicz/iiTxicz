@@ -7,4 +7,4 @@
 ![stats](https://api-github-stats.iitxicz.com/api?username=iiTxicz&show_icons=true&theme=shadow_green)
 
 ![Top Languages](https://api-github-stats.iitxicz.com/api/top-langs/?username=iiTxicz&hide_progress=false&theme=shadow_green)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=iiTxicz&langs_count=8&theme=shadow_green)
+![Top Langs](https://api-github-stats.iitxicz.com/api/top-langs/?username=iiTxicz&langs_count=8&theme=shadow_green)
