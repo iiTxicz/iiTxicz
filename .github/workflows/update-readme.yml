@@ -1,4 +1,4 @@
-name: Update README every 2 minutes
+name: Update README every 5 minutes
 
 on:
   schedule:
@@ -14,7 +14,8 @@ jobs:
 
       - name: Update README
         run: |
-          ${pwd}/update_readme_script.sh
+          # Use $(pwd) to reference the current working directory
+          $(pwd)/update_readme_script.sh
 
       - name: Commit and push changes
         run: |
