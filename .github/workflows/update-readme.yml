@@ -7,15 +7,16 @@ on:
 jobs:
   update-readme:
     runs-on: ubuntu-latest
+    defaults: 
+    run: 
+    working-directory: ./workflows
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
 
       - name: Update README
-        run: |
-          # Use $(pwd) to reference the current working directory
-          $(pwd)/update_readme_script.sh
+        run: ./update_readme_script.sh
 
       - name: Commit and push changes
         run: |
