@@ -2,14 +2,14 @@ name: Update README every 5 minutes
 
 on:
   schedule:
-    - cron: "5 * * * *"
+    - cron: "*/5 * * * *"
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
     defaults: 
-    run: 
-    working-directory: ./workflows
+      run: 
+        working-directory: ./workflows
 
     steps:
       - name: Checkout repository
