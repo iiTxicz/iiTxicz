@@ -15,7 +15,7 @@ jobs:
       - name: Update README
         run: |
           # Use a script to update and validate URLs in README.md
-          ../update_readme_script.sh
+          iiTxicz/iiTxicz/.github/workflows/update_readme_script.sh
 
       - name: Commit and push changes
         run: |
