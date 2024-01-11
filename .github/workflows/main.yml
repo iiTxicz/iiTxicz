@@ -1,0 +1,34 @@
+name: Update README every 5 minutes
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    defaults: 
+      run: 
+        working-directory: ./workflows
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Update README
+        run: ./update_readme_script.sh
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add README.md
+          git commit -m "Update README" || echo "No changes to commit"
+          git push
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-2
