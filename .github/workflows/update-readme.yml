@@ -15,10 +15,6 @@ jobs:
       - name: Update README
         run: |
           ${pwd}/update_readme_script.sh
-        with: 
-          token: {
-            ${{secrets.github_token}}
-          }
 
       - name: Commit and push changes
         run: |
