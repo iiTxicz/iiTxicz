@@ -3,5 +3,3 @@
 ![stats](https://github-readme-stats-iitxiczs-projects.vercel.app/api?username=iiTxicz&show_icons=true&theme=shadow_green)
 
 ![Top Langs](https://github-readme-stats-iitxiczs-projects.vercel.app/api/top-langs/?username=iiTxicz&langs_count=8&theme=shadow_green)
-
-# Class of 2025
